@@ -13,10 +13,3 @@ print("Valor pra testes: ", Num, type(Num))
 print("Nome: ", Name, type(Name))
 print("Valor aprox. de Pi: ", PiValue, type(PiValue))
 print("Já leu um livro hoje: ", HaveReadABookToday, type(HaveReadABookToday))
-
-#Essa função type() identifica o tipo da variável digitada
-#Operadores aritmétricos são usados para duas funções:
-
-#Primeira fução:
-NewPiValue = PiValue + 3 
-print(NewPiValue)
