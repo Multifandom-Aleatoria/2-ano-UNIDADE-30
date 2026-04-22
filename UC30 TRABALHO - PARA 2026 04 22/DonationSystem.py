@@ -41,6 +41,6 @@ while True:
 
 print("\nObrigado(a) pela participação!")
 print("Sua doação ajuda a transformar o impossível em possível.")
-print("Feito por Júlia Vitória e Luan, estudantes de T.I. do Senac RN")
+print("Feito por J.V. e Luan, estudantes de T.I. do Senac RN")
 
 # :)
