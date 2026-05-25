@@ -7,7 +7,18 @@ body {
 h1 {
     font-family: "Lilita One", sans-serif;
     color: #261e34;
-    margin-top: 40px;
+  margin-top: 40px;
+}
+
+div.DWWM{
+  
+  background-color: #151a36;
+  border-radius: 20px;
+  margin: auto;
+}
+
+h1.DWWM{
+  color: white;
 }
 
 h2 {
@@ -98,6 +109,9 @@ img.JVDPI{
 }
 
 img.JVDPI:hover{
+    opacity: 100%;
+    transition: 50s;
+}
     opacity: 100%;
     transition: 50s;
 }
