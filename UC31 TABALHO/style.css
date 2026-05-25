@@ -1,0 +1,103 @@
+body {
+    margin: 40px;
+    text-align: center;
+    background: linear-gradient(#ffffff, rgb(238, 238, 197), rgb(250, 224, 250), rgb(205, 242, 255), #d1dfdf);
+}
+
+h1 {
+    font-family: "Lilita One", sans-serif;
+    color: #261e34;
+    margin-top: 40px;
+}
+
+h2 {
+    font-family: "Lilita One", sans-serif;
+    color: #312235;
+    stroke-width: 2px;
+    stroke: aliceblue;
+}
+
+h2.proj {
+    font-family: "Lilita One", sans-serif;
+    color:aliceblue;
+    stroke-width: 2px;
+    stroke: aliceblue;
+}
+
+p {
+    font-family: "Chiron GoRound TC", sans-serif;
+    color: #2d1f31;
+
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+p:hover {
+    font-size: 16px;
+}
+
+p.projInfo {
+    font-family: "Chiron GoRound TC", sans-serif;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+footer {
+    background: linear-gradient(#232528, #1a1220);
+    margin-top: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.info {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info h6 {
+    margin: 0;
+    color: white;
+    font-family: "Lilita One", sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.info h6:hover {
+    color: #c7b8ff;
+}
+
+p.copy {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: "Lilita One", sans-serif;
+    font-size: 14px;
+}
+
+div.projects{
+    background-color: #261e34;
+    border-radius: 20px;
+    margin: auto;
+    padding: 30px;
+    backdrop-filter: blur(100%);
+}
+
+img.JVDPI{
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    opacity: 10%;
+}
+
+img.JVDPI:hover{
+    opacity: 100%;
+    transition: 50s;
+}
