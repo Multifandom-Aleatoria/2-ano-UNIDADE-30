@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    {% if tema == 'escuro' %}
+        <link rel="stylesheet"
+              href="{{ url_for('static', filename='escuro.css') }}">
+    {% else %}
+        <link rel="stylesheet"
+              href="{{ url_for('static', filename='claro.css') }}">
+    {% endif %}
+
+    <title>QUALQUER COISA MENOS UM NOME CRIATIVO</title>
+</head>
+<body>
+
+    {% if nome %}
+        <h1>Olá, {{ nome }}!</h1>
+    {% else %}
+        <h1>Bem-vindo!</h1>
+    {% endif %}
+
+    <form action="/salvar" method="post">
+        <input type="text" name="nome" required>
+        <button type="submit">Salvar Nome</button>
+    </form>
+
+    <a href="/tema/claro">Tema Claro</a>
+    <a href="/tema/escuro">Tema Escuro</a>
+
+</body>
+</html>
