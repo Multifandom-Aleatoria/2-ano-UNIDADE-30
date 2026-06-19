@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquete ao Vivo</title>
+</head>
+<body>
+    
+<h1>Enquete ao Vivo</h1>
+
+{% for opcao, quantidade in votos.items() %}
+    <p>
+        {{ opcao }} - {{ quantidade }} voto(s)
+
+        <a href="/votar/{{ opcao }}">
+            <button>Votar</button>
+        </a>
+    </p>
+{% endfor %}
+
+<a href="/resultado">
+    <button>Ver Resultado</button>
+</a>
+
+</body>
+</html>

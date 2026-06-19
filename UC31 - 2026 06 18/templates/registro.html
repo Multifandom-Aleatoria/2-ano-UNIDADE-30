@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado</title>
+</head>
+<body>
+
+<h1>Resultado da Enquete</h1>
+
+{% for opcao, quantidade in votos.items() %}
+
+    {% if total > 0 %}
+        {% set porcentagem = (quantidade / total * 100) %}
+    {% else %}
+        {% set porcentagem = 0 %}
+    {% endif %}
+
+    <p>
+        {{ opcao }} -
+        {{ quantidade }} voto(s) -
+        {{ "%.1f"|format(porcentagem) }}%
+    </p>
+
+{% endfor %}
+
+<a href="/">
+    <button>Voltar</button>
+</a>
+
+</body>
+</html>
